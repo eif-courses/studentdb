@@ -1,0 +1,12 @@
+{{> header }}
+
+<ul class="list-group">
+    <li class="list-group-item"><b>List of Vilniaus College Students</b></li>
+
+
+    {{#students}}
+        <li class="list-group-item"><i class="fas fa-user-alt text-info mx-2"></i>Age: {{age}}, Name: {{name}}, <a href="details/{{id}}">details</a>
+    {{/students}}
+</ul>
+{{> footer }}
+
